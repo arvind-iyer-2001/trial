@@ -1,14 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'auth/firebase_user_provider.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import 'package:trial/login_page/login_page_widget.dart';
-import 'flutter_flow/flutter_flow_theme.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'home_page/home_page_widget.dart';
-import 'my_appointments/my_appointments_widget.dart';
-import 'activeplans/activeplans_widget.dart';
-import 'profile_page/profile_page_widget.dart';
+import 'frontend/screens/activeplans_widget.dart';
+import 'frontend/flutter_flow/flutter_flow_theme.dart';
+import 'frontend/screens/home_page_widget.dart';
+import 'frontend/screens/login_page_widget.dart';
+import 'frontend/screens/my_appointments_widget.dart';
+import 'frontend/screens/profile_page_widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

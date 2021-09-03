@@ -1,36 +1,90 @@
 import 'package:file_picker/file_picker.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-class pdfupload {
-  final mainReference = Firestore.instance.reference().child('Database');
+class FileUpload {
+  final String uid;
+  FileUpload(
+    this.uid,
+  );
+  final _databaseReference = FirebaseFirestore.instance;
 
   Future getPdfAndUpload() async {
-    var rng = new Random();
-    String randomName = "";
-    for (var i = 0; i < 20; i++) {
-      print(rng.nextInt(100));
-      randomName += rng.nextInt(100).toString();
-    }
-    File file =
-        await FilePicker.getFile(type: FileType.CUSTOM, fileExtension: 'pdf');
-    String fileName = '${randomName}.pdf';
-    print(fileName);
-    print('${file.readAsBytesSync()}');
-    savePdf(file.readAsBytesSync(), fileName);
+    try {
+      FilePickerResult filePickerResult = await FilePicker.platform
+          .pickFiles(
+        type: FileType.any,
+        allowedExtensions: [
+          'pdf',
+        ],
+        allowMultiple: false,
+      )
+          .onError(
+        (PlatformException error, stackTrace) {
+          throw error.message;
+        },
+      );
+      filePickerResult.files.forEach(
+        (element) {
+          upload(element);
+        },
+      );
+    } on PlatformException catch (err) {
+      throw err.message;
+    } finally {}
   }
 
-  Future savePdf(List<int> asset, String name) async {
-    StorageReference reference = FirebaseStorage.instance.ref().child(name);
-    StorageUploadTask uploadTask = reference.putData(asset);
-    String url = await (await uploadTask.onComplete).ref.getDownloadURL();
-    print(url);
-    documentFileUpload(url);
-    return url;
-  }
+  Future upload(PlatformFile platformFile) async {
+    var dateTime = DateTime.now().toIso8601String();
+    var newName = "pdf:$dateTime";
+    Reference reference = FirebaseStorage.instance
+        .ref(
+          platformFile.extension,
+        )
+        .child(
+          newName,
+        );
+    final metadata = SettableMetadata(
+      customMetadata: {
+        'size': platformFile.size.toString(),
+        'org_file_name': platformFile.name,
+      },
+      contentType: platformFile.extension,
+    );
 
-  void documentFileUpload(String str) {
-    var data = {
-      "PDF": str,
-    };
-    mainReference.child("Documents").child('pdf').set(data).then((v) {});
+    final uploadTask = await reference
+        .putData(
+      platformFile.bytes,
+      metadata,
+    )
+        .onError(
+      (PlatformException error, stackTrace) {
+        throw error.message;
+      },
+    );
+
+    String url = await uploadTask.ref.getDownloadURL().onError(
+      (PlatformException error, stackTrace) {
+        throw error.message;
+      },
+    );
+
+    await _databaseReference
+        .collection("users")
+        .doc(uid)
+        .collection("docs")
+        .doc(newName)
+        .set(
+      {
+        'file_name': platformFile.name,
+        'file_path': platformFile.path,
+        'file_size': platformFile.size,
+        'extension': platformFile.extension,
+        'upload_time': dateTime,
+        'file_url': url,
+      },
+    );
   }
 }
