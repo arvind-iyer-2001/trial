@@ -2,7 +2,7 @@ import '../../../auth/auth_util.dart';
 import '../../../main.dart';
 import 'package:flutter/material.dart';
 
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 
 class Otp1Widget extends StatefulWidget {
@@ -25,7 +25,7 @@ class _Otp1WidgetState extends State<Otp1Widget> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.background,
+        backgroundColor: UrjaaTheme.background,
         automaticallyImplyLeading: false,
         leading: Icon(
           Icons.chevron_left_rounded,
@@ -34,7 +34,7 @@ class _Otp1WidgetState extends State<Otp1Widget> {
         ),
         title: Text(
           'Code Verification',
-          style: FlutterFlowTheme.title2.override(
+          style: UrjaaTheme.title2.override(
             fontFamily: 'Lexend Deca',
             color: Colors.white,
             fontSize: 22,
@@ -50,7 +50,7 @@ class _Otp1WidgetState extends State<Otp1Widget> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height * 1,
         decoration: BoxDecoration(
-          color: FlutterFlowTheme.background,
+          color: UrjaaTheme.background,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.max,
@@ -62,14 +62,14 @@ class _Otp1WidgetState extends State<Otp1Widget> {
                 obscureText: false,
                 decoration: InputDecoration(
                   labelText: 'ENTER THE OTP',
-                  labelStyle: FlutterFlowTheme.bodyText1.override(
+                  labelStyle: UrjaaTheme.bodyText1.override(
                     fontFamily: 'Lexend Deca',
                     color: Color(0x98FFFFFF),
                     fontSize: 14,
                     fontWeight: FontWeight.normal,
                   ),
                   hintText: '528491',
-                  hintStyle: FlutterFlowTheme.bodyText1.override(
+                  hintStyle: UrjaaTheme.bodyText1.override(
                     fontFamily: 'Lexend Deca',
                     color: Color(0x98FFFFFF),
                     fontSize: 14,
@@ -90,12 +90,12 @@ class _Otp1WidgetState extends State<Otp1Widget> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   filled: true,
-                  fillColor: FlutterFlowTheme.darkBackground,
+                  fillColor: UrjaaTheme.darkBackground,
                   contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                 ),
-                style: FlutterFlowTheme.bodyText1.override(
+                style: UrjaaTheme.bodyText1.override(
                   fontFamily: 'Lexend Deca',
-                  color: FlutterFlowTheme.grayLight,
+                  color: UrjaaTheme.grayLight,
                   fontSize: 14,
                   fontWeight: FontWeight.normal,
                 ),
@@ -132,10 +132,10 @@ class _Otp1WidgetState extends State<Otp1Widget> {
                 options: FFButtonOptions(
                   width: 230,
                   height: 60,
-                  color: FlutterFlowTheme.darkBackground,
-                  textStyle: FlutterFlowTheme.subtitle2.override(
+                  color: UrjaaTheme.darkBackground,
+                  textStyle: UrjaaTheme.subtitle2.override(
                     fontFamily: 'Lexend Deca',
-                    color: FlutterFlowTheme.textColor,
+                    color: UrjaaTheme.textColor,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),

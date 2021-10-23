@@ -1,5 +1,5 @@
 import '../flutter_flow/flutter_flow_radio_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../../main.dart';
 import 'package:flutter/material.dart';
@@ -40,13 +40,13 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
           },
           child: Icon(
             Icons.chevron_left_rounded,
-            color: FlutterFlowTheme.grayLight,
+            color: UrjaaTheme.grayLight,
             size: 32,
           ),
         ),
         title: Text(
           'Add Another Profile',
-          style: FlutterFlowTheme.title3.override(
+          style: UrjaaTheme.title3.override(
             fontFamily: 'Lexend Deca',
           ),
         ),
@@ -54,7 +54,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
         centerTitle: false,
         elevation: 0,
       ),
-      backgroundColor: FlutterFlowTheme.background,
+      backgroundColor: UrjaaTheme.background,
       body: SafeArea(
         child: Container(
           width: MediaQuery.of(context).size.width,
@@ -89,7 +89,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                       child: Text(
                         'Upload a photo for us to easily identify this person.',
                         textAlign: TextAlign.center,
-                        style: FlutterFlowTheme.bodyText1.override(
+                        style: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                         ),
                       ),
@@ -103,12 +103,12 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: 'Persons Name',
-                      labelStyle: FlutterFlowTheme.bodyText1.override(
+                      labelStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                       ),
                       hintText: 'Official name here...',
-                      hintStyle: FlutterFlowTheme.bodyText1.override(
+                      hintStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
                         color: Color(0x98FFFFFF),
                       ),
@@ -127,12 +127,12 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                     ),
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
-                      color: FlutterFlowTheme.textColor,
+                      color: UrjaaTheme.textColor,
                     ),
                   ),
                 ),
@@ -143,12 +143,12 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: 'Persons Age',
-                      labelStyle: FlutterFlowTheme.bodyText1.override(
+                      labelStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                       ),
                       hintText: 'i.e. 34',
-                      hintStyle: FlutterFlowTheme.bodyText1.override(
+                      hintStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
                         color: Color(0x98FFFFFF),
                       ),
@@ -167,12 +167,12 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                     ),
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
-                      color: FlutterFlowTheme.textColor,
+                      color: UrjaaTheme.textColor,
                     ),
                     keyboardType: TextInputType.number,
                   ),
@@ -184,12 +184,12 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: 'Persons Ailments',
-                      labelStyle: FlutterFlowTheme.bodyText1.override(
+                      labelStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                       ),
                       hintText: 'What types of allergies do they have..',
-                      hintStyle: FlutterFlowTheme.bodyText1.override(
+                      hintStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
                         color: Color(0x98FFFFFF),
                       ),
@@ -208,12 +208,12 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                     ),
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
-                      color: FlutterFlowTheme.textColor,
+                      color: UrjaaTheme.textColor,
                     ),
                     maxLines: 3,
                   ),
@@ -225,7 +225,7 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                     children: [
                       Text(
                         'Persons Birth Sex',
-                        style: FlutterFlowTheme.bodyText1.override(
+                        style: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                         ),
                       )
@@ -243,15 +243,15 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                           setState(() => radioButtonValue = value);
                         },
                         optionHeight: 25,
-                        textStyle: FlutterFlowTheme.bodyText1.override(
+                        textStyle: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
-                          color: FlutterFlowTheme.textColor,
+                          color: UrjaaTheme.textColor,
                           fontWeight: FontWeight.bold,
                         ),
                         textPadding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                         buttonPosition: RadioButtonPosition.left,
                         direction: Axis.horizontal,
-                        radioButtonColor: FlutterFlowTheme.primaryColor,
+                        radioButtonColor: UrjaaTheme.primaryColor,
                         toggleable: false,
                         horizontalAlignment: WrapAlignment.start,
                         verticalAlignment: WrapCrossAlignment.start,
@@ -275,10 +275,10 @@ class _AddAnotherProfileWidgetState extends State<AddAnotherProfileWidget> {
                     options: FFButtonOptions(
                       width: 230,
                       height: 56,
-                      color: FlutterFlowTheme.primaryColor,
-                      textStyle: FlutterFlowTheme.subtitle2.override(
+                      color: UrjaaTheme.primaryColor,
+                      textStyle: UrjaaTheme.subtitle2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                       ),
                       elevation: 3,
                       borderSide: BorderSide(

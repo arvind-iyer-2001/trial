@@ -1,6 +1,6 @@
 import '../../backend/backend.dart';
 import '../components/edit_booking_widget.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -46,7 +46,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
         return Scaffold(
           key: scaffoldKey,
           appBar: AppBar(
-            backgroundColor: FlutterFlowTheme.background,
+            backgroundColor: UrjaaTheme.background,
             automaticallyImplyLeading: false,
             leading: InkWell(
               onTap: () async {
@@ -54,13 +54,13 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
               },
               child: Icon(
                 Icons.chevron_left_rounded,
-                color: FlutterFlowTheme.grayLight,
+                color: UrjaaTheme.grayLight,
                 size: 32,
               ),
             ),
             title: Text(
               'Details',
-              style: FlutterFlowTheme.title3.override(
+              style: UrjaaTheme.title3.override(
                 fontFamily: 'Lexend Deca',
               ),
             ),
@@ -68,7 +68,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
             centerTitle: false,
             elevation: 0,
           ),
-          backgroundColor: FlutterFlowTheme.background,
+          backgroundColor: UrjaaTheme.background,
           body: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -81,7 +81,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                       Expanded(
                         child: Text(
                           'Type of Appointment',
-                          style: FlutterFlowTheme.bodyText1.override(
+                          style: UrjaaTheme.bodyText1.override(
                             fontFamily: 'Lexend Deca',
                           ),
                         ),
@@ -97,7 +97,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                       Expanded(
                         child: Text(
                           appointmentDetailsAppointmentsRecord.appointmentType,
-                          style: FlutterFlowTheme.title3.override(
+                          style: UrjaaTheme.title3.override(
                             fontFamily: 'Lexend Deca',
                             fontWeight: FontWeight.bold,
                           ),
@@ -114,7 +114,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                       Expanded(
                         child: Text(
                           'What’s the problem?',
-                          style: FlutterFlowTheme.bodyText1.override(
+                          style: UrjaaTheme.bodyText1.override(
                             fontFamily: 'Lexend Deca',
                           ),
                         ),
@@ -131,7 +131,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                         child: Text(
                           appointmentDetailsAppointmentsRecord
                               .appointmentDescription,
-                          style: FlutterFlowTheme.bodyText2.override(
+                          style: UrjaaTheme.bodyText2.override(
                             fontFamily: 'Lexend Deca',
                           ),
                         ),
@@ -147,7 +147,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                       Expanded(
                         child: Text(
                           'For',
-                          style: FlutterFlowTheme.bodyText1.override(
+                          style: UrjaaTheme.bodyText1.override(
                             fontFamily: 'Lexend Deca',
                           ),
                         ),
@@ -188,7 +188,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                               width: MediaQuery.of(context).size.width * 0.9,
                               height: 60,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.darkBackground,
+                                color: UrjaaTheme.darkBackground,
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Padding(
@@ -198,7 +198,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                                   children: [
                                     Card(
                                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                                      color: FlutterFlowTheme.primaryColor,
+                                      color: UrjaaTheme.primaryColor,
                                       elevation: 2,
                                       shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(40),
@@ -234,12 +234,10 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                                               Text(
                                                 appointmentDetailsAppointmentsRecord
                                                     .appointmentName,
-                                                style: FlutterFlowTheme
-                                                    .subtitle1
+                                                style: UrjaaTheme.subtitle1
                                                     .override(
                                                   fontFamily: 'Lexend Deca',
-                                                  color: FlutterFlowTheme
-                                                      .textColor,
+                                                  color: UrjaaTheme.textColor,
                                                 ),
                                               )
                                             ],
@@ -247,11 +245,10 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                                           Text(
                                             appointmentDetailsAppointmentsRecord
                                                 .appointmentEmail,
-                                            style: FlutterFlowTheme.bodyText1
-                                                .override(
+                                            style:
+                                                UrjaaTheme.bodyText1.override(
                                               fontFamily: 'Lexend Deca',
-                                              color:
-                                                  FlutterFlowTheme.primaryColor,
+                                              color: UrjaaTheme.primaryColor,
                                             ),
                                           )
                                         ],
@@ -277,7 +274,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                           padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
                           child: Text(
                             'When',
-                            style: FlutterFlowTheme.bodyText1.override(
+                            style: UrjaaTheme.bodyText1.override(
                               fontFamily: 'Lexend Deca',
                             ),
                           ),
@@ -297,7 +294,7 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                               'MMMMEEEEd',
                               appointmentDetailsAppointmentsRecord
                                   .appointmentTime),
-                          style: FlutterFlowTheme.title1.override(
+                          style: UrjaaTheme.title1.override(
                             fontFamily: 'Lexend Deca',
                           ),
                         ),
@@ -327,10 +324,10 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                     options: FFButtonOptions(
                       width: 300,
                       height: 60,
-                      color: FlutterFlowTheme.primaryColor,
-                      textStyle: FlutterFlowTheme.subtitle2.override(
+                      color: UrjaaTheme.primaryColor,
+                      textStyle: UrjaaTheme.subtitle2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                         fontWeight: FontWeight.w600,
                       ),
                       elevation: 2,
@@ -354,10 +351,10 @@ class _AppointmentDetailsWidgetState extends State<AppointmentDetailsWidget> {
                     options: FFButtonOptions(
                       width: 230,
                       height: 50,
-                      color: FlutterFlowTheme.darkBackground,
-                      textStyle: FlutterFlowTheme.subtitle2.override(
+                      color: UrjaaTheme.darkBackground,
+                      textStyle: UrjaaTheme.subtitle2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                         fontWeight: FontWeight.w600,
                       ),
                       elevation: 2,

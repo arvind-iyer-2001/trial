@@ -1,7 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
+
 import 'appointment_details_widget.dart';
 import '../../backend/backend.dart';
 import '../components/book_appointment_widget.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -22,11 +24,11 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.background,
+        backgroundColor: UrjaaTheme.background,
         automaticallyImplyLeading: false,
         title: Text(
           'Appointments',
-          style: FlutterFlowTheme.title1.override(
+          style: UrjaaTheme.title1.override(
             fontFamily: 'Lexend Deca',
           ),
         ),
@@ -34,25 +36,26 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
         centerTitle: false,
         elevation: 0,
       ),
-      backgroundColor: FlutterFlowTheme.background,
+      backgroundColor: UrjaaTheme.background,
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          await showModalBottomSheet(
-            isScrollControlled: true,
-            context: context,
-            builder: (context) {
-              return Container(
-                height: 720,
-                child: BookAppointmentWidget(),
-              );
-            },
-          );
+          await FirebaseAuth.instance.signOut();
+          // await showModalBottomSheet(
+          //   isScrollControlled: true,
+          //   context: context,
+          //   builder: (context) {
+          //     return Container(
+          //       height: 720,
+          //       child: BookAppointmentWidget(),
+          //     );
+          //   },
+          // );
         },
-        backgroundColor: FlutterFlowTheme.primaryColor,
+        backgroundColor: UrjaaTheme.primaryColor,
         elevation: 8,
         child: Icon(
           Icons.add_rounded,
-          color: FlutterFlowTheme.textColor,
+          color: UrjaaTheme.textColor,
           size: 36,
         ),
       ),
@@ -67,7 +70,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                 children: [
                   Text(
                     'My Appointments',
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
                     ),
                   )
@@ -156,7 +159,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                   width: MediaQuery.of(context).size.width,
                                   height: 90,
                                   decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.darkBackground,
+                                    color: UrjaaTheme.darkBackground,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Padding(
@@ -178,8 +181,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                                   child: Text(
                                                     listViewAppointmentsRecord
                                                         .appointmentType,
-                                                    style: FlutterFlowTheme
-                                                        .title3
+                                                    style: UrjaaTheme.title3
                                                         .override(
                                                       fontFamily: 'Lexend Deca',
                                                     ),
@@ -188,8 +190,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                               ),
                                               Icon(
                                                 Icons.chevron_right_rounded,
-                                                color:
-                                                    FlutterFlowTheme.grayLight,
+                                                color: UrjaaTheme.grayLight,
                                                 size: 24,
                                               )
                                             ],
@@ -206,8 +207,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                                 Card(
                                                   clipBehavior: Clip
                                                       .antiAliasWithSaveLayer,
-                                                  color: FlutterFlowTheme
-                                                      .background,
+                                                  color: UrjaaTheme.background,
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsets.fromLTRB(
@@ -217,12 +217,12 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                                           'MMMMEEEEd',
                                                           listViewAppointmentsRecord
                                                               .appointmentTime),
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .textColor,
                                                       ),
                                                     ),
@@ -233,8 +233,7 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                                       8, 0, 0, 0),
                                                   child: Text(
                                                     'For',
-                                                    style: FlutterFlowTheme
-                                                        .bodyText1
+                                                    style: UrjaaTheme.bodyText1
                                                         .override(
                                                       fontFamily: 'Lexend Deca',
                                                     ),
@@ -248,12 +247,12 @@ class _MyAppointmentsWidgetState extends State<MyAppointmentsWidget> {
                                                     child: Text(
                                                       listViewAppointmentsRecord
                                                           .appointmentName,
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .secondaryColor,
                                                       ),
                                                     ),

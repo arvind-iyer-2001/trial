@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'auth/firebase_user_provider.dart';
 import 'frontend/screens/activeplans_widget.dart';
-import 'frontend/flutter_flow/flutter_flow_theme.dart';
+import 'frontend/flutter_flow/urjaa_theme.dart';
 import 'frontend/screens/home_page_widget.dart';
 import 'frontend/screens/login_page_widget.dart';
 import 'frontend/screens/my_appointments_widget.dart';
@@ -129,10 +129,10 @@ class _NavBarPageState extends State<NavBarPage> {
             label: 'Profile',
           )
         ],
-        backgroundColor: FlutterFlowTheme.darkBackground,
+        backgroundColor: UrjaaTheme.darkBackground,
         currentIndex: tabs.keys.toList().indexOf(_currentPage),
         selectedItemColor: Colors.white,
-        unselectedItemColor: FlutterFlowTheme.grayLight,
+        unselectedItemColor: UrjaaTheme.grayLight,
         onTap: (i) => setState(() => _currentPage = tabs.keys.toList()[i]),
         showSelectedLabels: true,
         showUnselectedLabels: true,

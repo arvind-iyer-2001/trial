@@ -1,7 +1,7 @@
 import '../screens/add_another_profile_widget.dart';
 import '../../backend/backend.dart';
 import 'flutter_flow_radio_button.dart';
-import 'flutter_flow_theme.dart';
+import 'urjaa_theme.dart';
 import 'flutter_flow_widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +37,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
               width: 40,
               height: 40,
               child: SpinKitPumpingHeart(
-                color: FlutterFlowTheme.primaryColor,
+                color: UrjaaTheme.primaryColor,
                 size: 40,
               ),
             ),
@@ -55,13 +55,13 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
               },
               child: Icon(
                 Icons.chevron_left_rounded,
-                color: FlutterFlowTheme.grayLight,
+                color: UrjaaTheme.grayLight,
                 size: 32,
               ),
             ),
             title: Text(
               'Edit Profile',
-              style: FlutterFlowTheme.title3.override(
+              style: UrjaaTheme.title3.override(
                 fontFamily: 'Lexend Deca',
               ),
             ),
@@ -69,7 +69,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
             centerTitle: false,
             elevation: 0,
           ),
-          backgroundColor: FlutterFlowTheme.background,
+          backgroundColor: UrjaaTheme.background,
           body: Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * 1,
@@ -89,7 +89,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                     width: 90,
                     height: 90,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.darkBackground,
+                      color: UrjaaTheme.darkBackground,
                       shape: BoxShape.circle,
                     ),
                     child: Container(
@@ -119,8 +119,8 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       options: FFButtonOptions(
                         width: 140,
                         height: 40,
-                        color: FlutterFlowTheme.darkBackground,
-                        textStyle: FlutterFlowTheme.bodyText2.override(
+                        color: UrjaaTheme.darkBackground,
+                        textStyle: UrjaaTheme.bodyText2.override(
                           fontFamily: 'Lexend Deca',
                         ),
                         elevation: 2,
@@ -141,12 +141,12 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: 'Your Name',
-                        labelStyle: FlutterFlowTheme.bodyText1.override(
+                        labelStyle: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
-                          color: FlutterFlowTheme.grayLight,
+                          color: UrjaaTheme.grayLight,
                         ),
                         hintText: 'Please enter a valid number...',
-                        hintStyle: FlutterFlowTheme.bodyText1.override(
+                        hintStyle: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                           color: Color(0x98FFFFFF),
                         ),
@@ -165,12 +165,12 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor: FlutterFlowTheme.darkBackground,
+                        fillColor: UrjaaTheme.darkBackground,
                         contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                       ),
-                      style: FlutterFlowTheme.bodyText1.override(
+                      style: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                       ),
                     ),
                   ),
@@ -184,12 +184,12 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: 'Ailments',
-                        labelStyle: FlutterFlowTheme.bodyText1.override(
+                        labelStyle: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
-                          color: FlutterFlowTheme.grayLight,
+                          color: UrjaaTheme.grayLight,
                         ),
                         hintText: 'What types of allergies do you have..',
-                        hintStyle: FlutterFlowTheme.bodyText1.override(
+                        hintStyle: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                           color: Color(0x98FFFFFF),
                         ),
@@ -208,12 +208,12 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor: FlutterFlowTheme.darkBackground,
+                        fillColor: UrjaaTheme.darkBackground,
                         contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                       ),
-                      style: FlutterFlowTheme.bodyText1.override(
+                      style: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                       ),
                       maxLines: 3,
                     ),
@@ -225,7 +225,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       children: [
                         Text(
                           'Your Birth Sex',
-                          style: FlutterFlowTheme.bodyText1.override(
+                          style: UrjaaTheme.bodyText1.override(
                             fontFamily: 'Lexend Deca',
                           ),
                         )
@@ -248,7 +248,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                   width: 40,
                                   height: 40,
                                   child: SpinKitPumpingHeart(
-                                    color: FlutterFlowTheme.primaryColor,
+                                    color: UrjaaTheme.primaryColor,
                                     size: 40,
                                   ),
                                 ),
@@ -261,15 +261,15 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                 setState(() => radioButtonValue = value);
                               },
                               optionHeight: 25,
-                              textStyle: FlutterFlowTheme.bodyText1.override(
+                              textStyle: UrjaaTheme.bodyText1.override(
                                 fontFamily: 'Lexend Deca',
-                                color: FlutterFlowTheme.textColor,
+                                color: UrjaaTheme.textColor,
                                 fontWeight: FontWeight.bold,
                               ),
                               textPadding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                               buttonPosition: RadioButtonPosition.left,
                               direction: Axis.horizontal,
-                              radioButtonColor: FlutterFlowTheme.primaryColor,
+                              radioButtonColor: UrjaaTheme.primaryColor,
                               toggleable: false,
                               horizontalAlignment: WrapAlignment.start,
                               verticalAlignment: WrapCrossAlignment.start,
@@ -296,10 +296,10 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       options: FFButtonOptions(
                         width: 230,
                         height: 56,
-                        color: FlutterFlowTheme.primaryColor,
-                        textStyle: FlutterFlowTheme.subtitle2.override(
+                        color: UrjaaTheme.primaryColor,
+                        textStyle: UrjaaTheme.subtitle2.override(
                           fontFamily: 'Lexend Deca',
-                          color: FlutterFlowTheme.textColor,
+                          color: UrjaaTheme.textColor,
                         ),
                         elevation: 3,
                         borderSide: BorderSide(

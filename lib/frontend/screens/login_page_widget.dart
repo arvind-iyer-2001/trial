@@ -1,6 +1,6 @@
 import '../../auth/auth_util.dart';
 import 'complete_profile_widget.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import './forgot_password_widget.dart';
 import '../../main.dart';
@@ -41,7 +41,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.background,
+      backgroundColor: UrjaaTheme.background,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -54,7 +54,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height * 1,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.background,
+                      color: UrjaaTheme.background,
                       image: DecorationImage(
                         fit: BoxFit.fitWidth,
                         image: Image.asset(
@@ -76,12 +76,10 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 child: Column(
                                   children: [
                                     TabBar(
-                                      labelColor:
-                                          FlutterFlowTheme.tertiaryColor,
+                                      labelColor: UrjaaTheme.tertiaryColor,
                                       unselectedLabelColor:
-                                          FlutterFlowTheme.grayLight,
-                                      indicatorColor:
-                                          FlutterFlowTheme.tertiaryColor,
+                                          UrjaaTheme.grayLight,
+                                      indicatorColor: UrjaaTheme.tertiaryColor,
                                       indicatorWeight: 3,
                                       tabs: [
                                         Tab(
@@ -114,10 +112,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                           InputDecoration(
                                                         labelText:
                                                             'Email Address',
-                                                        labelStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        labelStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -125,10 +122,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         ),
                                                         hintText:
                                                             'Enter your email...',
-                                                        hintStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        hintStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -159,9 +155,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                                   .circular(8),
                                                         ),
                                                         filled: true,
-                                                        fillColor:
-                                                            FlutterFlowTheme
-                                                                .darkBackground,
+                                                        fillColor: UrjaaTheme
+                                                            .darkBackground,
                                                         contentPadding:
                                                             EdgeInsets.fromLTRB(
                                                                 20, 24, 20, 24),
@@ -173,12 +168,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         }
                                                         return null;
                                                       },
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .tertiaryColor,
                                                       ),
                                                     ),
@@ -195,10 +190,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                       decoration:
                                                           InputDecoration(
                                                         labelText: 'Password',
-                                                        labelStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        labelStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -206,10 +200,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         ),
                                                         hintText:
                                                             'Enter your password...',
-                                                        hintStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        hintStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -240,9 +233,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                                   .circular(8),
                                                         ),
                                                         filled: true,
-                                                        fillColor:
-                                                            FlutterFlowTheme
-                                                                .darkBackground,
+                                                        fillColor: UrjaaTheme
+                                                            .darkBackground,
                                                         contentPadding:
                                                             EdgeInsets.fromLTRB(
                                                                 20, 24, 20, 24),
@@ -270,12 +262,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         }
                                                         return null;
                                                       },
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .tertiaryColor,
                                                       ),
                                                     ),
@@ -316,15 +308,13 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         height: 60,
                                                         color:
                                                             Color(0xFF2E53FC),
-                                                        textStyle:
-                                                            FlutterFlowTheme
-                                                                .subtitle2
-                                                                .override(
+                                                        textStyle: UrjaaTheme
+                                                            .subtitle2
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
-                                                          color:
-                                                              FlutterFlowTheme
-                                                                  .textColor,
+                                                          color: UrjaaTheme
+                                                              .textColor,
                                                         ),
                                                         elevation: 3,
                                                         borderSide: BorderSide(
@@ -354,12 +344,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                       options: FFButtonOptions(
                                                         width: 170,
                                                         height: 40,
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .background,
-                                                        textStyle:
-                                                            FlutterFlowTheme
-                                                                .subtitle2
-                                                                .override(
+                                                        textStyle: UrjaaTheme
+                                                            .subtitle2
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color: Colors.white,
@@ -397,10 +386,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                           InputDecoration(
                                                         labelText:
                                                             'Email Address',
-                                                        labelStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        labelStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -408,10 +396,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         ),
                                                         hintText:
                                                             'Enter your email...',
-                                                        hintStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        hintStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -442,9 +429,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                                   .circular(8),
                                                         ),
                                                         filled: true,
-                                                        fillColor:
-                                                            FlutterFlowTheme
-                                                                .darkBackground,
+                                                        fillColor: UrjaaTheme
+                                                            .darkBackground,
                                                         contentPadding:
                                                             EdgeInsets.fromLTRB(
                                                                 20, 24, 20, 24),
@@ -456,12 +442,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         }
                                                         return null;
                                                       },
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .tertiaryColor,
                                                       ),
                                                     ),
@@ -478,10 +464,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                       decoration:
                                                           InputDecoration(
                                                         labelText: 'Password',
-                                                        labelStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        labelStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -489,10 +474,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         ),
                                                         hintText:
                                                             'Enter your password...',
-                                                        hintStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        hintStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -523,9 +507,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                                   .circular(8),
                                                         ),
                                                         filled: true,
-                                                        fillColor:
-                                                            FlutterFlowTheme
-                                                                .darkBackground,
+                                                        fillColor: UrjaaTheme
+                                                            .darkBackground,
                                                         contentPadding:
                                                             EdgeInsets.fromLTRB(
                                                                 20, 24, 20, 24),
@@ -553,12 +536,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         }
                                                         return null;
                                                       },
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .tertiaryColor,
                                                       ),
                                                     ),
@@ -566,7 +549,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                   Padding(
                                                     padding:
                                                         EdgeInsets.fromLTRB(
-                                                            0, 12, 0, 0),
+                                                      0,
+                                                      12,
+                                                      0,
+                                                      0,
+                                                    ),
                                                     child: TextFormField(
                                                       controller:
                                                           passwordConfirmController,
@@ -576,10 +563,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                           InputDecoration(
                                                         labelText:
                                                             'Confirm Password',
-                                                        labelStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        labelStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -587,10 +573,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         ),
                                                         hintText:
                                                             'Enter your password...',
-                                                        hintStyle:
-                                                            FlutterFlowTheme
-                                                                .bodyText1
-                                                                .override(
+                                                        hintStyle: UrjaaTheme
+                                                            .bodyText1
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
                                                           color:
@@ -621,9 +606,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                                   .circular(8),
                                                         ),
                                                         filled: true,
-                                                        fillColor:
-                                                            FlutterFlowTheme
-                                                                .darkBackground,
+                                                        fillColor: UrjaaTheme
+                                                            .darkBackground,
                                                         contentPadding:
                                                             EdgeInsets.fromLTRB(
                                                                 20, 24, 20, 24),
@@ -651,12 +635,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         }
                                                         return null;
                                                       },
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .tertiaryColor,
                                                       ),
                                                     ),
@@ -691,17 +675,15 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                       options: FFButtonOptions(
                                                         width: 230,
                                                         height: 60,
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .primaryColor,
-                                                        textStyle:
-                                                            FlutterFlowTheme
-                                                                .subtitle2
-                                                                .override(
+                                                        textStyle: UrjaaTheme
+                                                            .subtitle2
+                                                            .override(
                                                           fontFamily:
                                                               'Lexend Deca',
-                                                          color:
-                                                              FlutterFlowTheme
-                                                                  .textColor,
+                                                          color: UrjaaTheme
+                                                              .textColor,
                                                         ),
                                                         elevation: 3,
                                                         borderSide: BorderSide(

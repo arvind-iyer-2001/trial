@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // ignore: avoid_classes_with_only_static_members
-class FlutterFlowTheme {
+class UrjaaTheme {
   static const Color primaryColor = Color(0xFF2365FF);
   static const Color secondaryColor = Color(0xFFFF90CC);
   static const Color tertiaryColor = Color(0xFF3BD3C2);

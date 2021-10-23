@@ -1,5 +1,5 @@
 import '../../auth/auth_util.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +25,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.background,
+        backgroundColor: UrjaaTheme.background,
         automaticallyImplyLeading: false,
         leading: InkWell(
           onTap: () async {
@@ -33,13 +33,13 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
           },
           child: Icon(
             Icons.chevron_left_rounded,
-            color: FlutterFlowTheme.grayLight,
+            color: UrjaaTheme.grayLight,
             size: 32,
           ),
         ),
         title: Text(
           'Forgot Password',
-          style: FlutterFlowTheme.title3.override(
+          style: UrjaaTheme.title3.override(
             fontFamily: 'Lexend Deca',
           ),
         ),
@@ -47,13 +47,13 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
         centerTitle: false,
         elevation: 0,
       ),
-      backgroundColor: FlutterFlowTheme.background,
+      backgroundColor: UrjaaTheme.background,
       body: SafeArea(
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height * 1,
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.background,
+            color: UrjaaTheme.background,
             image: DecorationImage(
               fit: BoxFit.fitWidth,
               image: Image.asset(
@@ -72,7 +72,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                     Expanded(
                       child: Text(
                         'Enter the email associated with your account and we will send you a verification code.',
-                        style: FlutterFlowTheme.bodyText1.override(
+                        style: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                         ),
                       ),
@@ -87,12 +87,12 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                   obscureText: false,
                   decoration: InputDecoration(
                     labelText: 'Email Address',
-                    labelStyle: FlutterFlowTheme.bodyText1.override(
+                    labelStyle: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
                       color: Color(0x98FFFFFF),
                     ),
                     hintText: 'Enter your email...',
-                    hintStyle: FlutterFlowTheme.bodyText1.override(
+                    hintStyle: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
                       color: Color(0x98FFFFFF),
                     ),
@@ -111,12 +111,12 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     filled: true,
-                    fillColor: FlutterFlowTheme.darkBackground,
+                    fillColor: UrjaaTheme.darkBackground,
                     contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                   ),
-                  style: FlutterFlowTheme.bodyText1.override(
+                  style: UrjaaTheme.bodyText1.override(
                     fontFamily: 'Lexend Deca',
-                    color: FlutterFlowTheme.tertiaryColor,
+                    color: UrjaaTheme.tertiaryColor,
                   ),
                 ),
               ),
@@ -143,10 +143,10 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                   options: FFButtonOptions(
                     width: 230,
                     height: 60,
-                    color: FlutterFlowTheme.primaryColor,
-                    textStyle: FlutterFlowTheme.subtitle2.override(
+                    color: UrjaaTheme.primaryColor,
+                    textStyle: UrjaaTheme.subtitle2.override(
                       fontFamily: 'Lexend Deca',
-                      color: FlutterFlowTheme.textColor,
+                      color: UrjaaTheme.textColor,
                     ),
                     elevation: 3,
                     borderSide: BorderSide(

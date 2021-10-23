@@ -2,7 +2,7 @@ import '../../auth/auth_util.dart';
 import '../../backend/backend.dart';
 import '../flutter_flow/edit_profile_widget.dart';
 import '../flutter_flow/flutter_flow_animations.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'login_page_widget.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -56,7 +56,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
               width: 40,
               height: 40,
               child: SpinKitPumpingHeart(
-                color: FlutterFlowTheme.primaryColor,
+                color: UrjaaTheme.primaryColor,
                 size: 40,
               ),
             ),
@@ -65,7 +65,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
         final profilePageUsersRecord = snapshot.data;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.background,
+          backgroundColor: UrjaaTheme.background,
           body: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -77,7 +77,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                       width: MediaQuery.of(context).size.width,
                       height: 360,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.darkBackground,
+                        color: UrjaaTheme.darkBackground,
                       ),
                       child: Padding(
                         padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
@@ -93,7 +93,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 children: [
                                   Card(
                                     clipBehavior: Clip.antiAliasWithSaveLayer,
-                                    color: FlutterFlowTheme.primaryColor,
+                                    color: UrjaaTheme.primaryColor,
                                     elevation: 2,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(40),
@@ -122,13 +122,11 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                           width: 44,
                                           height: 44,
                                           decoration: BoxDecoration(
-                                            color:
-                                                FlutterFlowTheme.darkBackground,
+                                            color: UrjaaTheme.darkBackground,
                                             borderRadius:
                                                 BorderRadius.circular(8),
                                             border: Border.all(
-                                              color:
-                                                  FlutterFlowTheme.background,
+                                              color: UrjaaTheme.background,
                                               width: 2,
                                             ),
                                           ),
@@ -148,7 +146,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                             },
                                             icon: Icon(
                                               Icons.edit_outlined,
-                                              color: FlutterFlowTheme.grayLight,
+                                              color: UrjaaTheme.grayLight,
                                               size: 24,
                                             ),
                                             iconSize: 24,
@@ -161,13 +159,11 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                             width: 44,
                                             height: 44,
                                             decoration: BoxDecoration(
-                                              color: FlutterFlowTheme
-                                                  .darkBackground,
+                                              color: UrjaaTheme.darkBackground,
                                               borderRadius:
                                                   BorderRadius.circular(8),
                                               border: Border.all(
-                                                color:
-                                                    FlutterFlowTheme.background,
+                                                color: UrjaaTheme.background,
                                                 width: 2,
                                               ),
                                             ),
@@ -186,8 +182,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                               },
                                               icon: Icon(
                                                 Icons.login_rounded,
-                                                color: FlutterFlowTheme
-                                                    .secondaryColor,
+                                                color:
+                                                    UrjaaTheme.secondaryColor,
                                                 size: 24,
                                               ),
                                               iconSize: 24,
@@ -207,7 +203,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 children: [
                                   Text(
                                     profilePageUsersRecord.displayName,
-                                    style: FlutterFlowTheme.title3.override(
+                                    style: UrjaaTheme.title3.override(
                                       fontFamily: 'Lexend Deca',
                                     ),
                                   ),
@@ -221,9 +217,9 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                   padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
                                   child: Text(
                                     profilePageUsersRecord.email,
-                                    style: FlutterFlowTheme.bodyText1.override(
+                                    style: UrjaaTheme.bodyText1.override(
                                       fontFamily: 'Lexend Deca',
-                                      color: FlutterFlowTheme.primaryColor,
+                                      color: UrjaaTheme.primaryColor,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -238,7 +234,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                   Text(
                                     'Ailments',
                                     textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.bodyText1.override(
+                                    style: UrjaaTheme.bodyText1.override(
                                       fontFamily: 'Lexend Deca',
                                     ),
                                   )
@@ -253,7 +249,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                   Expanded(
                                     child: AutoSizeText(
                                       profilePageUsersRecord.ailments,
-                                      style: FlutterFlowTheme.title3.override(
+                                      style: UrjaaTheme.title3.override(
                                         fontFamily: 'Lexend Deca',
                                       ),
                                     ),
@@ -277,7 +273,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                         children: [
                           Text(
                             'Past Appointments',
-                            style: FlutterFlowTheme.bodyText1.override(
+                            style: UrjaaTheme.bodyText1.override(
                               fontFamily: 'Lexend Deca',
                             ),
                           )
@@ -300,7 +296,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 width: 40,
                                 height: 40,
                                 child: SpinKitPumpingHeart(
-                                  color: FlutterFlowTheme.primaryColor,
+                                  color: UrjaaTheme.primaryColor,
                                   size: 40,
                                 ),
                               ),
@@ -337,7 +333,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                     width: MediaQuery.of(context).size.width,
                                     height: 90,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.darkBackground,
+                                      color: UrjaaTheme.darkBackground,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Padding(
@@ -360,8 +356,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                                             4, 0, 0, 0),
                                                     child: Text(
                                                       '[Appointment Type]',
-                                                      style: FlutterFlowTheme
-                                                          .title3
+                                                      style: UrjaaTheme.title3
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
@@ -371,8 +366,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                                 ),
                                                 Icon(
                                                   Icons.chevron_right_rounded,
-                                                  color: FlutterFlowTheme
-                                                      .grayLight,
+                                                  color: UrjaaTheme.grayLight,
                                                   size: 24,
                                                 )
                                               ],
@@ -386,22 +380,21 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                                   Card(
                                                     clipBehavior: Clip
                                                         .antiAliasWithSaveLayer,
-                                                    color: FlutterFlowTheme
-                                                        .background,
+                                                    color:
+                                                        UrjaaTheme.background,
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsets.fromLTRB(
                                                               8, 4, 8, 4),
                                                       child: Text(
                                                         '[date_time]',
-                                                        style: FlutterFlowTheme
+                                                        style: UrjaaTheme
                                                             .bodyText1
                                                             .override(
                                                           fontFamily:
                                                               'Lexend Deca',
-                                                          color:
-                                                              FlutterFlowTheme
-                                                                  .textColor,
+                                                          color: UrjaaTheme
+                                                              .textColor,
                                                         ),
                                                       ),
                                                     ),
@@ -412,7 +405,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                                             8, 0, 0, 0),
                                                     child: Text(
                                                       'For',
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
@@ -426,12 +419,12 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                                             4, 0, 0, 0),
                                                     child: Text(
                                                       '[display_name]',
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText1
                                                           .override(
                                                         fontFamily:
                                                             'Lexend Deca',
-                                                        color: FlutterFlowTheme
+                                                        color: UrjaaTheme
                                                             .secondaryColor,
                                                       ),
                                                     ),

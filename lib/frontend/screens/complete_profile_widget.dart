@@ -6,7 +6,7 @@ import '../../backend/backend.dart';
 import '../flutter_flow/flutter_flow_animations.dart';
 import '../flutter_flow/flutter_flow_drop_down_template.dart';
 import '../flutter_flow/flutter_flow_radio_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../flutter_flow/upload_media.dart';
@@ -148,13 +148,13 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
           },
           child: Icon(
             Icons.chevron_left_rounded,
-            color: FlutterFlowTheme.grayLight,
+            color: UrjaaTheme.grayLight,
             size: 32,
           ),
         ),
         title: Text(
           'Complete Profile',
-          style: FlutterFlowTheme.title3.override(
+          style: UrjaaTheme.title3.override(
             fontFamily: 'Lexend Deca',
           ),
         ),
@@ -162,7 +162,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
         centerTitle: false,
         elevation: 0,
       ),
-      backgroundColor: FlutterFlowTheme.background,
+      backgroundColor: UrjaaTheme.background,
       body: SafeArea(
         child: Container(
           width: MediaQuery.of(context).size.width,
@@ -215,7 +215,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                 ).animated([animationsMap['circleImageOnPageLoadAnimation']]),
                 Text(
                   'Upload a photo for us to easily identify you.',
-                  style: FlutterFlowTheme.bodyText1.override(
+                  style: UrjaaTheme.bodyText1.override(
                     fontFamily: 'Lexend Deca',
                   ),
                 ).animated([animationsMap['textOnPageLoadAnimation1']]),
@@ -226,9 +226,9 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: 'Your Name',
-                      labelStyle: FlutterFlowTheme.bodyText1.override(
+                      labelStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -245,7 +245,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                     ),
                     validator: (String value) {
@@ -254,9 +254,9 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       }
                       return null;
                     },
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
-                      color: FlutterFlowTheme.textColor,
+                      color: UrjaaTheme.textColor,
                     ),
                   ).animated([animationsMap['textFieldOnPageLoadAnimation1']]),
                 ),
@@ -268,12 +268,12 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       labelText: 'Contact Number',
-                      labelStyle: FlutterFlowTheme.bodyText1.override(
+                      labelStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                       ),
                       hintText: 'e.g. +91 9284735115',
-                      hintStyle: FlutterFlowTheme.bodyText1.override(
+                      hintStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
                         color: Color(0x98FFFFFF),
                       ),
@@ -292,7 +292,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                     ),
                     validator: (String value) {
@@ -301,9 +301,9 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       }
                       return null;
                     },
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
-                      color: FlutterFlowTheme.textColor,
+                      color: UrjaaTheme.textColor,
                     ),
                   ).animated([animationsMap['textFieldOnPageLoadAnimation2']]),
                 ),
@@ -314,13 +314,13 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: 'Ailments',
-                      labelStyle: FlutterFlowTheme.bodyText1.override(
+                      labelStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                       ),
                       hintText:
                           'e.g. Acne, Body Pain, Acid Reflux, Diabetes, Hairfall...',
-                      hintStyle: FlutterFlowTheme.bodyText1.override(
+                      hintStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
                         color: Color(0x98FFFFFF),
                       ),
@@ -339,7 +339,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                     ),
                     validator: (String value) {
@@ -348,7 +348,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       }
                       return null;
                     },
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
                     ),
                     textAlign: TextAlign.center,
@@ -362,13 +362,13 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: 'Your Daily Routine in Brief.',
-                      labelStyle: FlutterFlowTheme.bodyText1.override(
+                      labelStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                       ),
                       hintText:
                           'e.g. Wake up at 7am. Breakfast at 8am. To work at 9am. Tea break at 10am. Lunch at 1pm....',
-                      hintStyle: FlutterFlowTheme.bodyText1.override(
+                      hintStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
                         color: Color(0x98FFFFFF),
                       ),
@@ -387,7 +387,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                     ),
                     validator: (String value) {
@@ -396,7 +396,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       }
                       return null;
                     },
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
                     ),
                     textAlign: TextAlign.center,
@@ -411,7 +411,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     children: [
                       Text(
                         'Your Birth Sex',
-                        style: FlutterFlowTheme.bodyText1.override(
+                        style: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                         ),
                       ).animated([animationsMap['textOnPageLoadAnimation2']])
@@ -431,15 +431,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             setState(() => radioButtonValue = value);
                           },
                           optionHeight: 25,
-                          textStyle: FlutterFlowTheme.bodyText1.override(
+                          textStyle: UrjaaTheme.bodyText1.override(
                             fontFamily: 'Lexend Deca',
-                            color: FlutterFlowTheme.textColor,
+                            color: UrjaaTheme.textColor,
                             fontWeight: FontWeight.bold,
                           ),
                           textPadding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                           buttonPosition: RadioButtonPosition.left,
                           direction: Axis.horizontal,
-                          radioButtonColor: FlutterFlowTheme.primaryColor,
+                          radioButtonColor: UrjaaTheme.primaryColor,
                           toggleable: false,
                           horizontalAlignment: WrapAlignment.start,
                           verticalAlignment: WrapCrossAlignment.start,
@@ -456,12 +456,12 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: 'Date of Birth',
-                      labelStyle: FlutterFlowTheme.bodyText1.override(
+                      labelStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                       ),
                       hintText: 'in DD/MM/YYYY e.g. 28/12/1997',
-                      hintStyle: FlutterFlowTheme.bodyText1.override(
+                      hintStyle: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
                         color: Color(0x98FFFFFF),
                       ),
@@ -480,7 +480,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8),
                       ),
                       filled: true,
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       contentPadding: EdgeInsets.fromLTRB(20, 24, 20, 24),
                     ),
                     validator: (String value) {
@@ -489,9 +489,9 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                       }
                       return null;
                     },
-                    style: FlutterFlowTheme.bodyText1.override(
+                    style: UrjaaTheme.bodyText1.override(
                       fontFamily: 'Lexend Deca',
-                      color: FlutterFlowTheme.textColor,
+                      color: UrjaaTheme.textColor,
                     ),
                   ).animated([animationsMap['textFieldOnPageLoadAnimation1']]),
                 ),
@@ -499,7 +499,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                   width: double.infinity,
                   height: 70,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.background,
+                    color: UrjaaTheme.background,
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
@@ -513,11 +513,11 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             obscureText: false,
                             decoration: InputDecoration(
                               labelText: 'Height',
-                              labelStyle: FlutterFlowTheme.bodyText1.override(
+                              labelStyle: UrjaaTheme.bodyText1.override(
                                 fontFamily: 'Lexend Deca',
                               ),
                               hintText: 'e.g. 151 cm',
-                              hintStyle: FlutterFlowTheme.bodyText1.override(
+                              hintStyle: UrjaaTheme.bodyText1.override(
                                 fontFamily: 'Lexend Deca',
                               ),
                               enabledBorder: UnderlineInputBorder(
@@ -535,7 +535,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               filled: true,
-                              fillColor: FlutterFlowTheme.darkBackground,
+                              fillColor: UrjaaTheme.darkBackground,
                             ),
                             validator: (String value) {
                               if (value.isEmpty) {
@@ -543,7 +543,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                               }
                               return null;
                             },
-                            style: FlutterFlowTheme.bodyText1.override(
+                            style: UrjaaTheme.bodyText1.override(
                               fontFamily: 'Lexend Deca',
                             ),
                           ),
@@ -557,11 +557,11 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             obscureText: false,
                             decoration: InputDecoration(
                               labelText: 'Weight',
-                              labelStyle: FlutterFlowTheme.bodyText1.override(
+                              labelStyle: UrjaaTheme.bodyText1.override(
                                 fontFamily: 'Lexend Deca',
                               ),
                               hintText: 'e.g. 90kg',
-                              hintStyle: FlutterFlowTheme.bodyText1.override(
+                              hintStyle: UrjaaTheme.bodyText1.override(
                                 fontFamily: 'Lexend Deca',
                               ),
                               enabledBorder: UnderlineInputBorder(
@@ -579,7 +579,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               filled: true,
-                              fillColor: FlutterFlowTheme.darkBackground,
+                              fillColor: UrjaaTheme.darkBackground,
                             ),
                             validator: (String value) {
                               if (value.isEmpty) {
@@ -587,7 +587,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                               }
                               return null;
                             },
-                            style: FlutterFlowTheme.bodyText1.override(
+                            style: UrjaaTheme.bodyText1.override(
                               fontFamily: 'Lexend Deca',
                             ),
                           ),
@@ -641,10 +641,10 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         options: FFButtonOptions(
                           width: 230,
                           height: 46,
-                          color: FlutterFlowTheme.primaryColor,
-                          textStyle: FlutterFlowTheme.subtitle2.override(
+                          color: UrjaaTheme.primaryColor,
+                          textStyle: UrjaaTheme.subtitle2.override(
                             fontFamily: 'Lexend Deca',
-                            color: FlutterFlowTheme.textColor,
+                            color: UrjaaTheme.textColor,
                           ),
                           elevation: 3,
                           borderSide: BorderSide(
@@ -676,10 +676,10 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     options: FFButtonOptions(
                       width: 220,
                       height: 50,
-                      color: FlutterFlowTheme.darkBackground,
-                      textStyle: FlutterFlowTheme.subtitle2.override(
+                      color: UrjaaTheme.darkBackground,
+                      textStyle: UrjaaTheme.subtitle2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                       ),
                       elevation: 3,
                       borderSide: BorderSide(

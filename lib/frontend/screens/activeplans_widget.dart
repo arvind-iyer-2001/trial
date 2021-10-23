@@ -1,4 +1,4 @@
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -19,11 +19,11 @@ class _ActiveplansWidgetState extends State<ActiveplansWidget> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.background,
+        backgroundColor: UrjaaTheme.background,
         automaticallyImplyLeading: false,
         title: Text(
           'Active Plans',
-          style: FlutterFlowTheme.title1.override(
+          style: UrjaaTheme.title1.override(
             fontFamily: 'Lexend Deca',
           ),
         ),
@@ -31,7 +31,7 @@ class _ActiveplansWidgetState extends State<ActiveplansWidget> {
         centerTitle: false,
         elevation: 0,
       ),
-      backgroundColor: FlutterFlowTheme.background,
+      backgroundColor: UrjaaTheme.background,
       body: SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.max,

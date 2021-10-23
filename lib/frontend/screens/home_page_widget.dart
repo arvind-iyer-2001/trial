@@ -1,7 +1,7 @@
 import '../../auth/auth_util.dart';
 import '../../backend/backend.dart';
 import '../components/book_appointment_widget.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -41,8 +41,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 
   @override
   Widget build(BuildContext context) {
-    const String toLaunch =
-        'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=urjaadc@gmail.com';
+    final String email = 'urjaadc@gmail.com';
+    final String toLaunch =
+        'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=$email';
     return StreamBuilder<UsersRecord>(
       stream: UsersRecord.getDocument(currentUserReference),
       builder: (context, snapshot) {
@@ -62,7 +63,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         final homePageUsersRecord = snapshot.data;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.background,
+          backgroundColor: UrjaaTheme.background,
           body: SafeArea(
             child: SingleChildScrollView(
               child: Column(
@@ -77,7 +78,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       children: [
                         Card(
                           clipBehavior: Clip.antiAliasWithSaveLayer,
-                          color: FlutterFlowTheme.primaryColor,
+                          color: UrjaaTheme.primaryColor,
                           elevation: 2,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40),
@@ -109,7 +110,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
                           child: Text(
                             'Greetings',
-                            style: FlutterFlowTheme.title1.override(
+                            style: UrjaaTheme.title1.override(
                               fontFamily: 'Lexend Deca',
                             ),
                           ),
@@ -126,7 +127,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           padding: EdgeInsets.fromLTRB(0, 4, 0, 0),
                           child: Text(
                             homePageUsersRecord.displayName,
-                            style: FlutterFlowTheme.title2.override(
+                            style: UrjaaTheme.title2.override(
                               fontFamily: 'Lexend Deca',
                               fontWeight: FontWeight.bold,
                             ),
@@ -153,7 +154,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
                           child: Text(
                             'Your next appointment',
-                            style: FlutterFlowTheme.bodyText1.override(
+                            style: UrjaaTheme.bodyText1.override(
                               fontFamily: 'Lexend Deca',
                             ),
                           ),
@@ -194,7 +195,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 width: MediaQuery.of(context).size.width * 0.9,
                                 height: 100,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.tertiaryColor,
+                                  color: UrjaaTheme.tertiaryColor,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: InkWell(
@@ -237,8 +238,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               Text(
                                                 'Book Appointment',
                                                 textAlign: TextAlign.start,
-                                                style: FlutterFlowTheme.title3
-                                                    .override(
+                                                style:
+                                                    UrjaaTheme.title3.override(
                                                   fontFamily: 'Lexend Deca',
                                                 ),
                                               ),
@@ -248,8 +249,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       0, 0, 0, 8),
                                                   child: AutoSizeText(
                                                     'Schedule an appointment with our licensed professional.',
-                                                    style: FlutterFlowTheme
-                                                        .bodyText2
+                                                    style: UrjaaTheme.bodyText2
                                                         .override(
                                                       fontFamily: 'Lexend Deca',
                                                       color: Color(0xB4FFFFFF),
@@ -284,7 +284,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         MediaQuery.of(context).size.width * 0.9,
                                     height: 100,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.primaryColor,
+                                      color: UrjaaTheme.primaryColor,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Row(
@@ -314,7 +314,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 Text(
                                                   'Call the Office',
                                                   textAlign: TextAlign.start,
-                                                  style: FlutterFlowTheme.title3
+                                                  style: UrjaaTheme.title3
                                                       .override(
                                                     fontFamily: 'Lexend Deca',
                                                   ),
@@ -326,7 +326,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             0, 0, 0, 8),
                                                     child: AutoSizeText(
                                                       'Give us a call in order to schedule your appointment.',
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText2
                                                           .override(
                                                         fontFamily:
@@ -364,7 +364,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         MediaQuery.of(context).size.width * 0.9,
                                     height: 100,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.secondaryColor,
+                                      color: UrjaaTheme.secondaryColor,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Row(
@@ -394,7 +394,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 Text(
                                                   'Email Us',
                                                   textAlign: TextAlign.start,
-                                                  style: FlutterFlowTheme.title3
+                                                  style: UrjaaTheme.title3
                                                       .override(
                                                     fontFamily: 'Lexend Deca',
                                                   ),
@@ -406,7 +406,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             0, 0, 0, 8),
                                                     child: AutoSizeText(
                                                       'Send us an email and we will get back to you within 2 days.',
-                                                      style: FlutterFlowTheme
+                                                      style: UrjaaTheme
                                                           .bodyText2
                                                           .override(
                                                         fontFamily:

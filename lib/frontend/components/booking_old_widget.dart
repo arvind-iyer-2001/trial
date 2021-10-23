@@ -1,7 +1,7 @@
 import '../../auth/auth_util.dart';
 import '../../backend/backend.dart';
 import '../flutter_flow/flutter_flow_drop_down_template.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/urjaa_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -41,7 +41,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * 1,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.darkBackground,
+        color: UrjaaTheme.darkBackground,
       ),
       child: Padding(
         padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
@@ -78,7 +78,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                     padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
                     child: Text(
                       'Book Appointment',
-                      style: FlutterFlowTheme.title3.override(
+                      style: UrjaaTheme.title3.override(
                         fontFamily: 'Lexend Deca',
                       ),
                     ),
@@ -91,7 +91,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                           padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
                           child: Text(
                             'Fill out the information below in order to book your appointment with our office.',
-                            style: FlutterFlowTheme.bodyText1.override(
+                            style: UrjaaTheme.bodyText1.override(
                               fontFamily: 'Lexend Deca',
                             ),
                           ),
@@ -108,30 +108,30 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: 'Email Address',
-                        labelStyle: FlutterFlowTheme.bodyText1.override(
+                        labelStyle: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: FlutterFlowTheme.background,
+                            color: UrjaaTheme.background,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: FlutterFlowTheme.background,
+                            color: UrjaaTheme.background,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor: FlutterFlowTheme.darkBackground,
+                        fillColor: UrjaaTheme.darkBackground,
                         contentPadding: EdgeInsets.fromLTRB(20, 24, 0, 24),
                       ),
-                      style: FlutterFlowTheme.subtitle2.override(
+                      style: UrjaaTheme.subtitle2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.primaryColor,
+                        color: UrjaaTheme.primaryColor,
                         fontWeight: FontWeight.bold,
                       ),
                       keyboardType: TextInputType.emailAddress,
@@ -147,30 +147,30 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: 'Booking For',
-                        labelStyle: FlutterFlowTheme.bodyText1.override(
+                        labelStyle: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: FlutterFlowTheme.background,
+                            color: UrjaaTheme.background,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: FlutterFlowTheme.background,
+                            color: UrjaaTheme.background,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor: FlutterFlowTheme.darkBackground,
+                        fillColor: UrjaaTheme.darkBackground,
                         contentPadding: EdgeInsets.fromLTRB(20, 24, 0, 24),
                       ),
-                      style: FlutterFlowTheme.subtitle2.override(
+                      style: UrjaaTheme.subtitle2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -189,18 +189,18 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                       },
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 60,
-                      textStyle: FlutterFlowTheme.subtitle2.override(
+                      textStyle: UrjaaTheme.subtitle2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                       ),
                       icon: Icon(
                         Icons.keyboard_arrow_down_rounded,
-                        color: FlutterFlowTheme.grayLight,
+                        color: UrjaaTheme.grayLight,
                         size: 15,
                       ),
-                      fillColor: FlutterFlowTheme.darkBackground,
+                      fillColor: UrjaaTheme.darkBackground,
                       elevation: 3,
-                      borderColor: FlutterFlowTheme.background,
+                      borderColor: UrjaaTheme.background,
                       borderWidth: 2,
                       borderRadius: 8,
                       margin: EdgeInsets.fromLTRB(20, 4, 16, 4),
@@ -214,30 +214,30 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: 'What\'s the problem?',
-                        labelStyle: FlutterFlowTheme.bodyText1.override(
+                        labelStyle: UrjaaTheme.bodyText1.override(
                           fontFamily: 'Lexend Deca',
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: FlutterFlowTheme.background,
+                            color: UrjaaTheme.background,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: FlutterFlowTheme.background,
+                            color: UrjaaTheme.background,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         filled: true,
-                        fillColor: FlutterFlowTheme.darkBackground,
+                        fillColor: UrjaaTheme.darkBackground,
                         contentPadding: EdgeInsets.fromLTRB(20, 24, 0, 24),
                       ),
-                      style: FlutterFlowTheme.bodyText1.override(
+                      style: UrjaaTheme.bodyText1.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.textColor,
+                        color: UrjaaTheme.textColor,
                       ),
                       textAlign: TextAlign.start,
                       maxLines: 8,
@@ -267,10 +267,10 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                           width: MediaQuery.of(context).size.width * 0.9,
                           height: 60,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.darkBackground,
+                            color: UrjaaTheme.darkBackground,
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(
-                              color: FlutterFlowTheme.background,
+                              color: UrjaaTheme.background,
                               width: 2,
                             ),
                           ),
@@ -287,8 +287,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                                       padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                                       child: Text(
                                         'Choose Date',
-                                        style:
-                                            FlutterFlowTheme.bodyText1.override(
+                                        style: UrjaaTheme.bodyText1.override(
                                           fontFamily: 'Lexend Deca',
                                           fontSize: 12,
                                         ),
@@ -298,10 +297,9 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                                       padding: EdgeInsets.fromLTRB(20, 4, 0, 0),
                                       child: Text(
                                         dateTimeFormat('MMMMEEEEd', datePicked),
-                                        style:
-                                            FlutterFlowTheme.bodyText2.override(
+                                        style: UrjaaTheme.bodyText2.override(
                                           fontFamily: 'Lexend Deca',
-                                          color: FlutterFlowTheme.tertiaryColor,
+                                          color: UrjaaTheme.tertiaryColor,
                                           fontWeight: FontWeight.w600,
                                         ),
                                       ),
@@ -321,7 +319,7 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                                       },
                                       icon: Icon(
                                         Icons.date_range_outlined,
-                                        color: FlutterFlowTheme.grayLight,
+                                        color: UrjaaTheme.grayLight,
                                         size: 20,
                                       ),
                                       iconSize: 20,
@@ -350,8 +348,8 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                           options: FFButtonOptions(
                             width: 100,
                             height: 50,
-                            color: FlutterFlowTheme.background,
-                            textStyle: FlutterFlowTheme.subtitle2.override(
+                            color: UrjaaTheme.background,
+                            textStyle: UrjaaTheme.subtitle2.override(
                               fontFamily: 'Lexend Deca',
                               color: Colors.white,
                               fontWeight: FontWeight.w500,
@@ -385,8 +383,8 @@ class _BookingOldWidgetState extends State<BookingOldWidget> {
                           options: FFButtonOptions(
                             width: 150,
                             height: 50,
-                            color: FlutterFlowTheme.primaryColor,
-                            textStyle: FlutterFlowTheme.subtitle2.override(
+                            color: UrjaaTheme.primaryColor,
+                            textStyle: UrjaaTheme.subtitle2.override(
                               fontFamily: 'Lexend Deca',
                               color: Colors.white,
                               fontWeight: FontWeight.w500,
